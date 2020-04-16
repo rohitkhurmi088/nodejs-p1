@@ -10,13 +10,26 @@ const path = require('path');
 /* products[] created in 'admin.js-->show in 'shop.js'*/
 //const products = adminData.products //products[] -> admin.js
 
-const productsController = require('../controllers/products');
+const shopController = require('../controllers/shop');
 
 //_______________________(what user sees: shop)____________________________
 
-//Display list of products (added by the Admin)
-router.get('/', productsController.getProducts);
+//MAIN PAGE:: index.js (Front page of Shop)
+router.get('/', shopController.getIndex);
 
+//Display list of products (added by the Admin)
+router.get('/products', shopController.getProducts);
+
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _
+
+//SHOP: CART
+router.get('/cart', shopController.getCart);
+
+//SHOP:ORDERS
+router.get('/orders', shopController.getOrders);
+
+//SHOP:CHECKOUT
+router.get('/checkout', shopController.getCheckout);
 
 
 

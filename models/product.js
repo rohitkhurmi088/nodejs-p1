@@ -28,11 +28,14 @@ const getProductsFromFile = cb =>{
 
 //const products =[]
 
-/********MODEL ***********************************/
+/******** MODEL ***********************************/
 module.exports = class Product{
     //constructor
-    constructor(t){
-        this.title = t;
+    constructor(title,imageUrl,price,description){
+        this.title = title;
+        this.imageUrl = imageUrl;
+        this.description = description;
+        this.price = price;
     }
 
     //Method: store products in array

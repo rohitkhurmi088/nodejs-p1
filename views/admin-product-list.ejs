@@ -28,9 +28,11 @@
 		</div>
 		<!--card-action-->
 		<div class="card__actions">
-			<form action="/add-to-cart" method="POST">
-				<button class="btn">Add to Cart</button>
-			</form>
+            <a href="/admin/edit-product" class="btn">Edit</a>
+            <!--delete button:should not be a link: not used for GET request-->
+            <form action="/admin/delete-product" method="POST">
+                <button class="btn">Add to Cart</button>
+            </form>
 		</div>
 	</article>
 	<%}%>

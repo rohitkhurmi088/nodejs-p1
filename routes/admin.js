@@ -5,7 +5,7 @@ const path = require('path');
 //get current directory
 //const rootDir = require('../util/path');
 
-const productsController = require('../controllers/products');
+const adminController = require('../controllers/admin');
 
 //productList array
 //const products = [] ;
@@ -14,15 +14,15 @@ const productsController = require('../controllers/products');
 //_______________________(what admin can do:)____________________________
 
 //GET:(form data) added products: '/admin/add-products
-router.get('/add-product', productsController.getAddProduct);
+router.get('/add-product', adminController.getAddProduct);
 
 
 //POST:(form data) Post added products: '/admin/add-product'
-router.post('/add-product', productsController.postAddProduct);
+router.post('/add-product', adminController.postAddProduct);
 
 
-
-
+//admin product-list:GET '/admin/products'
+router.get('/products', adminController.getProducts);
 
 
 //exporting admin.js routes
