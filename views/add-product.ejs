@@ -1,0 +1,33 @@
+<!--ADD  PRODUCTS -->
+<link rel="stylesheet" href="/css/add-product.css">
+
+<!--Form to ADD products (By admin): '/admin/add-product'-->
+<!-- nameField will be added to req.body params-->
+
+<form class ="product-form" action="/admin/add-product" method="POST">
+    <!--name-->
+    <div class="form-control">
+        <!--nameField will be allocated to req.body-->
+        <label for"title">Title</label>
+        <input type="text" name="title" id="title"> 
+    </div>
+    <!--image-->
+    <div class="form-control">
+        <label for="imageUrl">Image URL</label>
+        <input type="text" name="imageUrl" id="imageUrl">
+    </div>
+    <!--price-->
+    <div class="form-control">
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" step="0.01">
+    </div>
+    <!--description-->
+    <div class="form-control">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" rows="3" cols="45"></textarea>
+    </div>
+
+    <!--submit button-->
+    <button class="btn" type="submit">Add Product</button>
+</form>
+

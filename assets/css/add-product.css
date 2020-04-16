@@ -1,0 +1,29 @@
+.product-form {
+  /*Moving form to center*/
+  width: 20rem;
+  max-width: 90%;
+  margin: auto;
+  background-color: whitesmoke; }
+  .product-form .form-control {
+    margin: 1rem 0; }
+    .product-form .form-control label, .product-form .form-control input {
+      display: block;
+      margin-bottom: 0.25rem;
+      width: 100%; }
+    .product-form .form-control input {
+      font: inherit;
+      border: 1px solid #a1a1a1;
+      border-radius: 2px; }
+      .product-form .form-control input:focus {
+        outline-color: #00695c; }
+
+.btn {
+  font: inherit;
+  border: 1px solid #00695c;
+  color: #00695c;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:hover, .btn:active {
+    background-color: #00695c;
+    color: white; }
